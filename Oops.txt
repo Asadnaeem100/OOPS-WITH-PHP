@@ -1,0 +1,113 @@
+=> OOPs Stand for (Object Oriented Programming style) Language.
+
+=> For e.g:- 
+	  Aik (1) car hay or uss main Different Cheezein hoti hain for example:-
+
+=> Class:- (Car);
+
+or uska Object
+
+=> Object:- (Engine, Color, Model, Company, Seats and many Other Things);
+
+=> Oops ko iss liay use kiya jata hay taa k aik car game hay to uss main sari cars ka different style or role hoga jis k liay (PHP) k ander Oops ka istmal kiya jata hay.
+
+=> Object Methods:- Php k ander aggr hummay Objects k Methods ko Access Karna hay to hammay Arrow Operator (->) ka use karna hoga.
+
+=> OOPs main pehly aik(1) Class bnai jatti hay phr us k ander pehly Properties ko likha jata hay or phr uss k Methods per Work kiya jata hay.
+
+=> OOPs k ander uss ki Properties k ander kuch acccess modifiers ka istmal kiya jata hay jo k three (3) hoty hain uss main:- 1.(Public) hota hay jo k her koi Access ker sakta 
+
+hay and 2. (Protected) hota hay jisko hum Ussi Class k ander yaa phr kissi doosri Class sy Extends ker k hum log Access ker sakty hain and last one 3. (Private) hota hay
+
+jo k sirf or sirf ussi Class k ander Access ker sakty hain uss k ilawa kahien or Access nhi ker sakty uss properties ko hum.
+
+=> OOPs main Methods main aik Keyword ka istmal kiya jata hay jo k (this->) likha jata jata hay jo k hmari Properties ko Call karta hay.
+
+=> OOPs main hum aik Class bannayn gay phrr uss say phr hum new sy new Objects bana ker new sy new Cheeze bana sakty hain.
+
+=> For example:- GTA Vice City game hay uss k ander her player ka different role hay jiss k liay hum (OOPs) ka istmal krty hain. For e.g:- hum pehly aik class bannayn 
+
+gay then phr hum :-
+
+Class Player{
+
+	//Properties
+	public $player_name;
+	public $age;
+
+	//Methods
+	
+Hum idder aik function bannayn gay jo k hamaray names ko set karay ga uss main hum aik Parameter pass krien gay:
+
+	function set_name($name){
+	$this->player_name = $name;
+	}
+Ab hum idder aik function bannayn gay orr uss main hum apna data ko get krien gay:
+	
+	function get_name(){
+	return $this->player_name;
+	}
+}
+
+ab hum idder aik issi Class ka New Object bannayn gay jo k aik Player ko banaye ga. For e.g:-
+
+$player = new Player(); // Yeh aik new Object create kiya hay
+
+idder hum usko set krein gay name 
+
+$player->set_name("Asad Naeem"); // humnay upper aik function bnaya tha set_name() k name say uss main yeh value put krta hay.
+
+then we can echo our Output
+
+$player->get_name();
+
+Everything is okay in this code
+
+iska Output yeh hoga:-
+
+-> Asad Naeem.
+
+=> OOPs k ander Class ki Properties ko Properties kahty hain or OOPs k ander Functions ko Methods kahty hain.
+
+=> OOPs (Object Oriented Programming language style) k ander sirf or sirf properties or methods hoty hain jis k upper sarri (Object Oriented Programming ) run karti hay.
+
+=> Construct function in OOPs in php:- aik aysa function hay jo echo hona he hona hay jab hamnay aik Object bana diya to wo echo hojayye ga. yeh aik ays function hay 
+
+jiss main value ko get nhi kiya jata simple aik class bannayn gay or uss main hum apni values ko echo krien gay.Or isko likhny ka tareeqa aysa hoga (__construct) For 
+
+e.g:-
+
+<?php
+
+Class Employee{
+	//Properties
+	public $name;
+	public $salary;
+
+	//Methods
+
+	function __construct() { //Yeh hamnay __construct k name sy function bnaya hay jo k automatically call hota hay or isko aysy he likha jata hay.
+
+	echo "Hello My Name is Asad Naeem";
+	}
+}
+
+//Yahan oer hum aik New Object Create krien gay or phr usko echo krwa skein gay.
+
+$asad = new Employee(); 
+
+?>
+
+-> Output:- (Hello My Name is Asad Naeem);
+
+=> OOPs k ander hum __construct() function ko yeh kah sakty hain k (wo jitny b objects bannay ga utni mrtba he __construct() function run kry ga).
+
+=> OOPs k ander __construct() function aik aysa function hay jo her new object create karnay per chalta hay jitnay b objects hongy utni mrtba he run kry ga Wo.
+
+==> DESTRUCTOR Function in PHP:-
+
+=> php k ander aik destructor() function hota jay jiska kam bakki functions say different hota hay.
+
+=> Yeh aik aysa function hay jo hmary Objects ko Destruct krdeta hay.
+
+=> Php k ander hum jitny b objects bannayn gay phr aggr hum unko destruct karwa chahein to wo __destruct() function ki madad sy hoga.
